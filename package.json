@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "babel": "babel script.es6.js -o script.es5.js"
+    "babel": "babel script.es6.js --watch -o script.es5.js"
   },
   "author": "",
   "license": "ISC",

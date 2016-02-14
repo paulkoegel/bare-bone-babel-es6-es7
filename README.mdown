@@ -1,17 +1,20 @@
-mkdir babel
-cd babel
-npm init .
-npm install --save-dev babel-cli
-npm install --save-dev babel-preset-es2015
-npm install --save-dev babel-preset-react
-npm install --save-dev babel-preset-stage-0
+    mkdir babel
+    cd babel
+    npm init .
+    npm install --save-dev babel-cli
+    npm install --save-dev babel-preset-es2015
+    npm install --save-dev babel-preset-react
+    npm install --save-dev babel-preset-stage-0
 
-npm run babel
+    npm run babel
+    
 (which is short for: `node_modules/.bin/babel script.es6.js -o script.es5.js`)
 
 
-.babelrc should look like this:
+`.babelrc` should look like this:
 
+```json
 {
   'presets': ['es2015', 'react', 'stage-0']
 }
+```

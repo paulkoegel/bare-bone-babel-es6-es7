@@ -20,3 +20,39 @@ var Foo = function () {
 
   return Foo;
 }();
+
+var Alert = function () {
+  function Alert() {
+    var _this = this;
+
+    _classCallCheck(this, Alert);
+
+    this.jim = function () {
+      console.log(_this.greeting() + ' Jim');
+    };
+  }
+
+  _createClass(Alert, [{
+    key: 'greeting',
+    value: function greeting() {
+      return 'Hello';
+    }
+  }]);
+
+  return Alert;
+}();
+
+var myAlert = new Alert();
+setTimeout(myAlert.jim, 500);
+
+var Bar = function Bar() {
+  _classCallCheck(this, Bar);
+
+  this.myProp = 42;
+
+  console.log('Bar class properties:', this.myProp, Bar.myClassProp);
+};
+
+Bar.myClassProp = 'ERM';
+
+var bar = new Bar();
