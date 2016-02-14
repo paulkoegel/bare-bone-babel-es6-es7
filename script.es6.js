@@ -51,3 +51,14 @@ let stillPeter = { first: 'John', ...youngPeter };
 
 let ids = [1, 2, 3, 4];
 let newIds = [77, ...ids, 99]; // [77, 1, 2, 3, 4, 99]
+
+
+
+let logMe = function() {
+  return this;
+};
+
+let obj = { state: 1 };
+
+console.log('obj::logMe', obj::logMe());
+

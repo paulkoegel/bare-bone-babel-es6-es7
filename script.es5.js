@@ -66,3 +66,11 @@ var stillPeter = _extends({ first: 'John' }, youngPeter);
 
 var ids = [1, 2, 3, 4];
 var newIds = [77].concat(ids, [99]); // [77, 1, 2, 3, 4, 99]
+
+var logMe = function logMe() {
+  return this;
+};
+
+var obj = { state: 1 };
+
+console.log('obj::logMe', logMe.call(obj));

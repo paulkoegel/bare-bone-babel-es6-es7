@@ -8,7 +8,10 @@
 
     npm run babel
     
-(which is short for: `node_modules/.bin/babel script.es6.js -o script.es5.js`)
+See package.json for the actual command that `npm run babel` will run.
+
+Evaluate a file on the command line via `babel-node` (the Babel REPL):
+`./node_modules/.bin/babel-node script.es6.js`
 
 
 `.babelrc` should look like this:
